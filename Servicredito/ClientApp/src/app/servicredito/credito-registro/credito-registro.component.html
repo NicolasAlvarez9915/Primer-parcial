@@ -1,0 +1,31 @@
+<div class="jumbotron text-center">
+    <h1>Calculo de creditos.</h1>
+</div>
+
+<div class="container">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <div class="row">
+        <div class="col-sm-4">
+            <h3> Debe ingresar los datos.</h3>
+            <p>
+              los cuales son: 
+              <br>Su identificacion, capital inicial, tasa de interes, tiempo.  
+          </p>
+      </div>
+        <div class="col-sm-4">
+             <h3>Ingrese su informacion. </h3>
+             <div>
+                <label id="identifiacionLabel">Identificacion:</label>
+                <input type="text" id="identificacionLabel"[(ngModel)]="credito.identificacionCliente"><br><br>
+                <label for="AasaLabel">Tasa de interes:</label>
+                <input type="text" id="TasaLabel" [(ngModel)]="credito.tasaInteres"><br><br>
+                <label for="capitalLabel">capital inicial:</label>
+                <input type="text" id="capitalLabel" [(ngModel)]="credito.capitalInicial"><br><br>
+                <label for="tiempoLabel">Tiempo:</label>
+                <imput type="text"id="tiempoLabel"[(ngModel)]="credito.tiempo">
+            </div>
+        </div>
+      </div>
+</div>
